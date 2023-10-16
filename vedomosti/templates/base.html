@@ -1,15 +1,126 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Тестовая страница</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'vedomost/style.css' %}">
+        <!-- <script type="text/javascript" src="{% static 'b1.js' %}"></script> -->
     </head>
     <body>
        <div class="main-container">
-            <header>
-                <p>Отображаемый текст</p>
-                <p>Новое изменение</p>
+            <header class="header-container">
+                <img src="../static/img/logo.png" class="logo" alt="logo">
+                <h2 class="header-title">Новокубанский филиал ФГБНУ "Росинформагротех"<br>КубНИИТиМ</h2>
+                <p class="header-prog-name"><b>Программа:</b> к СТО АИСТ 23.9-2021.<br> Упаковщики рулонов сенажа<br> и зелёных кормов в плёнку</p>
             </header>
+            <div class="lin-orange"></div>
+            <nav class="nav">
+                <p class="name-nav"><b>Формы: </b></p>
+                <button class="b1">Б1</button>
+                <button class="b2">Б2</button>
+                <button class="b3">Б3</button>
+                <button class="b4">Б4</button>
+                <button class="b5">Б5</button>
+                <button class="b6">Б6</button>
+                <button class="b7">Б7</button>
+                <button class="a2">А2</button>
+                <button class="a3">А3</button>
+            </nav>
+            <hr>
+            <section class="opisanie">
+                <p><b>Форма Б.1</b> - Ведомость определения характеристики места упаковки</p>
+                <table class="tabl_1">
+                    <tr>
+                        <td><label for="marka" class="mod_traktor">Марка машины:</label></td>
+                        <td><input type="text" id="marka" class="i_1" name="marka" size="50"></td>
+                    </tr>
+                    <tr>    
+                        <td><label for="mesto" class="mod_traktor">Место испытаний:</label></td>
+                        <td><input type="text" id="mesto" class="i_2" name="mesto" size="15"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="data" class="mod_traktor">Дата испытаний:</label></td>
+                        <td><input type="text" id="data" class="i_3" name="data" size="15"></td>
+                    </tr> 
+                    <tr>
+                        <td><label for="izmereniya" class="mod_traktor">Средства измерений:</label></td>
+                        <td><input type="text" id="izmereniya" class="i_4" name="izmereniya" size="35"></td>
+                    </tr>       
+                </table>
+            </section>
+            <section class="tabl">
+                <table class="main-tabl">
+                    <tr>
+                        <th class="tabl-th" rowspan="2">Измерение</th>
+                        <th class="tabl-th" rowspan="2">Вид покрытия<br> площадки в месте<br> упаковки</th>
+                        <th class="tabl-th" colspan="2">Размеры места<br> упаковки, м</th>
+                        <th class="tabl-th" rowspan="2">Уклон поверхности<br> площадки</th>
+                    </tr>
+                    <tr>
+                        <th>Длина</th>
+                        <th>Ширина</th>
+                    </tr>
+                    <tr>
+                        <td class="tabl-td">1</td>
+                        <td class="tabl-td"><input type="text" class="i_1_1" size="15"></td>
+                        <td class="tabl-td"><input type="number" class="i_1_2" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_1_3" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_1_4" size="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="tabl-td">2</td>
+                        <td class="tabl-td"><input type="text" class="i_2_1" size="15"></td>
+                        <td class="tabl-td"><input type="number" class="i_2_2" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_2_3" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_2_4" size="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="tabl-td">3</td>
+                        <td class="tabl-td"><input type="text" class="i_3_1" size="15"></td>
+                        <td class="tabl-td"><input type="number" class="i_3_2" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_3_3" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_3_4" size="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="tabl-td">Сумма</td>
+                        <td class="tabl-td" rowspan="2"></td>
+                        <td class="tabl-td"><input type="number" class="i_4_2" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_4_3" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_4_4" size="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="tabl-td">Среднее<br>арифметическое<br>значение</td>
+                        <!-- <td class="tabl-td"></td> -->
+                        <td class="tabl-td"><input type="number" class="i_5_2" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_5_3" size="7"></td>
+                        <td class="tabl-td"><input type="number" class="i_5_4" size="7"></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="podpis">
+                <table class=podp>
+                    <tr>
+                        <td>Исполнитель</td> <td>________________</td>
+                        <td>&nbsp;&nbsp;&nbsp;________________</td>
+                        <td>&nbsp;&nbsp;&nbsp;________________</td>
+                    </tr>
+                    <tr class="text-bot">
+                        <td> </td>
+                        <td class="text-bot">должность</td>
+                        <td class="text-bot">личная подпись</td>
+                        <td class="text-bot">инициалы, фамилия</td>
+                    </tr>
+                </table>
+            </section>
+            <footer class="fot">
+                <p class="text-footer">&copy; КубНИИТиМ<br>2023г.</p>
+                <p class="text-footer">352243,Краснодарский край, Новокубанск, ул.Красная,15 <br>
+                    Тел (86195)3-61-59 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; факс(86195)3-66-05 <br>
+                    <u>E-mail: director@kubniitim.ru</u>
+                </p>
+                <img src="../static/img/favicon.ico" alt="footer">
+            </footer>
        </div>
     </body>
 </html>
