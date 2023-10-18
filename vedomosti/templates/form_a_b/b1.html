@@ -1,0 +1,75 @@
+{% extends "../base.html" %}
+
+{% block title %}Форма Б.1{% endblock %}
+{% block title_form %}<p><b>Форма Б.1</b> - Ведомость определения характеристики места упаковки</p>{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor">Марка машины:</label></td>
+        <td><input type="text" id="marka" class="i_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor">Место испытаний:</label></td>
+        <td><input type="text" id="mesto" class="i_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor">Дата испытаний:</label></td>
+        <td><input type="text" id="data" class="i_3" name="data" size="15"></td>
+    </tr> 
+    <tr>
+        <td><label for="izmereniya" class="mod_traktor">Средства измерений:</label></td>
+        <td><input type="text" id="izmereniya" class="i_4" name="izmereniya" size="35"></td>
+    </tr>       
+</table>
+{% endblock %}
+
+{% block tabl %}
+<table class="main-tabl">
+    <tr>
+        <th class="tabl-th" rowspan="2">Измерение</th>
+        <th class="tabl-th" rowspan="2">Вид покрытия<br> площадки в месте<br> упаковки</th>
+        <th class="tabl-th" colspan="2">Размеры места<br> упаковки, м</th>
+        <th class="tabl-th" rowspan="2">Уклон поверхности<br> площадки</th>
+    </tr>
+    <tr>
+        <th>Длина</th>
+        <th>Ширина</th>
+    </tr>
+    <tr>
+        <td class="tabl-td">1</td>
+        <td class="tabl-td"><input type="text" class="i_1_1" size="15"></td>
+        <td class="tabl-td"><input type="number" class="i_1_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_1_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_1_4" size="7"></td>
+    </tr>
+    <tr>
+        <td class="tabl-td">2</td>
+        <td class="tabl-td"><input type="text" class="i_2_1" size="15"></td>
+        <td class="tabl-td"><input type="number" class="i_2_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_2_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_2_4" size="7"></td>
+    </tr>
+    <tr>
+        <td class="tabl-td">3</td>
+        <td class="tabl-td"><input type="text" class="i_3_1" size="15"></td>
+        <td class="tabl-td"><input type="number" class="i_3_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_3_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_3_4" size="7"></td>
+    </tr>
+    <tr>
+        <td class="tabl-td">Сумма</td>
+        <td class="tabl-td" rowspan="2"></td>
+        <td class="tabl-td"><input type="number" class="i_4_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_4_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_4_4" size="7"></td>
+    </tr>
+    <tr>
+        <td class="tabl-td">Среднее<br>арифметическое<br>значение</td>
+        <!-- <td class="tabl-td"></td> -->
+        <td class="tabl-td"><input type="number" class="i_5_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_5_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="i_5_4" size="7"></td>
+    </tr>
+</table>
+{% endblock %}
