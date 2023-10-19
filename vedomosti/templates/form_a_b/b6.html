@@ -1,0 +1,111 @@
+{% extends "../base.html" %}
+
+{% block title %}Форма Б.6{% endblock %}
+
+{% block title_form %}<p><b>Форма Б.6</b> - Ведомость определения растяжения плёнки</p>{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor">Марка машины:</label></td>
+        <td><input type="text" id="marka" class="i_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor">Место испытаний:</label></td>
+        <td><input type="text" id="mesto" class="i_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor">Дата испытаний:</label></td>
+        <td><input type="text" id="data" class="i_3" name="data" size="15"></td>
+    </tr> 
+    <tr>
+        <td><label for="izmereniya" class="mod_traktor">Средства измерений:</label></td>
+        <td><input type="text" id="izmereniya" class="i_4" name="izmereniya" size="35"></td>
+    </tr>       
+</table>
+{% endblock %}
+
+{% block tabl %}
+    <table class="tabl_b2">
+        <thead>
+            <tr>
+                <th rowspan="3">Измерение</th>
+                <th colspan="4">Расстояние между отметками на<br> бобине, мм</th>
+                <th colspan="4">Расстояние между отметками на<br>плёнке, намотанной<br> на рулон, мм</th>
+            </tr>
+            <tr>
+                <th colspan="2">Повторность</th>
+                <th rowspan="2">Сумма</th>
+                <th rowspan="2">Средне-<br>арифме-<br>тическое<br>значение</th>
+                <th colspan="2">Повторность</th>
+                <th rowspan="2">Сумма</th>
+                <th rowspan="2">Средне-<br>арифме-<br>тическое<br>значение</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>В начале<br>использования<br>бобины</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>В середине<br>использования<br>бобины</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>В конце<br>использования<br>бобины</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Сумма</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>Средне-<br>арифметическое<br>значение</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
