@@ -1,0 +1,70 @@
+{% extends "../base.html" %}
+
+{% block title %}Форма Б.4{% endblock %}
+
+{% block title_form %}<p><b>Форма Б.4</b> - Характеристика упаковочного материала</p>{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor">Марка машины:</label></td>
+        <td><input type="text" id="marka" class="i_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor">Место испытаний:</label></td>
+        <td><input type="text" id="mesto" class="i_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor">Дата испытаний:</label></td>
+        <td><input type="text" id="data" class="i_3" name="data" size="15"></td>
+    </tr> 
+    <tr>
+        <td><label for="izmereniya" class="mod_traktor">Средства измерений:</label></td>
+        <td><input type="text" id="izmereniya" class="i_4" name="izmereniya" size="35"></td>
+    </tr>       
+</table>
+{% endblock %}
+
+{% block tabl %}
+    <table class="tabl_b2">
+        <thead>
+            <tr>
+                <th>Повторность</th>
+                <th>Вид</th>
+                <th>Ширина<br>агростретч-<br>плёнки<br>на бобине, мм</th>
+                <th>Масса бобины, кг</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="text" class="i_4" size="20"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" class="i_4" size="20"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="text" class="i_4" size="20"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Сумма</td>
+                <td rowspan="2"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Средне-<br>арифметическое<br>значение</td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

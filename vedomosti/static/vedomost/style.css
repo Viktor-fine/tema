@@ -59,6 +59,7 @@ button{
 }
 .tabl{
    margin-top: 10px;
+   /* margin: 0 auto; */
 }
 .main-tabl{
     border: 1px solid black;
@@ -93,4 +94,21 @@ button{
 }
 .text-footer{
     text-align: center;
+}
+/* ----- b2 ----- */
+
+.tabl_b2, .tabl_b2 th, .tabl_b2 td{
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 7px;
+}
+.tabl_b2{
+    margin: 0 auto;
+}
+tfoot {
+    background-color: rgb(234, 255, 234);
+}
+thead{
+    background-color: rgb(233, 231, 231);
 }

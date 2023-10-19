@@ -7,4 +7,13 @@ def b1(request):
 
 def b2(request):
     return render(request, 'form_a_b/b2.html')
+
+def b3(request):
+    return render(request, 'form_a_b/b3.html')
+
+def b4(request):
+    return render(request, 'form_a_b/b4.html')
+
+def b5(request):
+    return render(request, 'form_a_b/b5.html')
   
