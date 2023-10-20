@@ -19,3 +19,9 @@ def b5(request):
 
 def b6(request):
     return render(request, 'form_a_b/b6.html')
+
+def b7(request):
+    return render(request, 'form_a_b/b7.html')
+
+def a2(request):
+    return render(request, 'form_a_b/a2.html')

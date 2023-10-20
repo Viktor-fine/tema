@@ -1,0 +1,167 @@
+{% extends "../base.html" %}
+
+{% block title %}Форма Б.7{% endblock %}
+
+{% block title_form %}<p><b>Форма Б.7</b> - Ведомость определения потерь в процессе упаковывания</p>{% endblock  %}
+
+{% block tabl_header %}
+<table class="tabl_1">
+    <tr>
+        <td><label for="marka" class="mod_traktor">Марка машины:</label></td>
+        <td><input type="text" id="marka" class="i_1" name="marka" size="50"></td>
+    </tr>
+    <tr>    
+        <td><label for="mesto" class="mod_traktor">Место испытаний:</label></td>
+        <td><input type="text" id="mesto" class="i_2" name="mesto" size="15"></td>
+    </tr>
+    <tr>
+        <td><label for="data" class="mod_traktor">Дата испытаний:</label></td>
+        <td><input type="text" id="data" class="i_3" name="data" size="15"></td>
+    </tr> 
+    <tr>
+        <td><label for="izmereniya" class="mod_traktor">Средства измерений:</label></td>
+        <td><input type="text" id="izmereniya" class="i_4" name="izmereniya" size="35"></td>
+    </tr>       
+</table>
+{% endblock %}
+
+{% block tabl %}
+    <table class="tabl_b2">
+        <thead>
+            <tr>
+                <th rowspan="3">Номер рулона</th>
+                <th colspan="3">Масса рулона до упаковывания, кг</th>
+                <th colspan="3">Масса растительного материала,<br> утерянного в процессе упаковывания, кг</th>
+            </tr>
+            <tr>
+                <th colspan="3">Повторность</th>
+                <th colspan="3">Повторность</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Сумма</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>Средне-<br>арифметическое<br>значение</th>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th>Maссовая<br>доля потерь<br>в процессе<br>упаковывания, %</th>
+                <td colspan="3"><input type="number" class="i_4" size="7"></td>
+                <td colspan="3"><input type="number" class="i_4" size="7"></td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
