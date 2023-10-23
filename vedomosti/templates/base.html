@@ -28,27 +28,29 @@
                 <button class="a3">А3</button>
             </nav>
             <hr>
-            <section class="opisanie">
-                {% block title_form %}{% endblock %}
-                {% block tabl_header %}{% endblock %}
-            </section>
-            <section class="tabl">
-                {% block tabl %}{% endblock %}
-            </section>
-            <section class="podpis">
-                <table class=podp>
-                    <tr>
-                        <td>Исполнитель</td> <td>________________</td>
-                        <td>&nbsp;&nbsp;&nbsp;________________</td>
-                        <td>&nbsp;&nbsp;&nbsp;________________</td>
-                    </tr>
-                    <tr class="text-bot">
-                        <td> </td>
-                        <td class="text-bot">должность</td>
-                        <td class="text-bot">личная подпись</td>
-                        <td class="text-bot">инициалы, фамилия</td>
-                    </tr>
-                </table>
+            <section class="fon">
+                <section class="opisanie">
+                    {% block title_form %}{% endblock %}
+                    {% block tabl_header %}{% endblock %}
+                </section>
+                <section class="tabl">
+                    {% block tabl %}{% endblock %}
+                </section>
+                <section class="podpis">
+                    <table class=podp>
+                        <tr>
+                            <td>Исполнитель</td> <td>________________</td>
+                            <td>&nbsp;&nbsp;&nbsp;________________</td>
+                            <td>&nbsp;&nbsp;&nbsp;________________</td>
+                        </tr>
+                        <tr class="text-bot">
+                            <td> </td>
+                            <td class="text-bot">должность</td>
+                            <td class="text-bot">личная подпись</td>
+                            <td class="text-bot">инициалы, фамилия</td>
+                        </tr>
+                    </table>
+                </section>
             </section>
             <footer class="fot">
                 <p class="text-footer">&copy; КубНИИТиМ<br>2023г.</p>

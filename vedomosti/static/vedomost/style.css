@@ -53,6 +53,8 @@ button{
     /* border: 2px solid #3d9970; */
     border-radius: 10px;
 }
+
+/* ----- content table ----- */
 .table_1, td{
     padding: 5px;
     font-size: 1.1rem;
@@ -111,4 +113,27 @@ tfoot {
 }
 thead{
     background-color: rgb(233, 231, 231);
+}
+
+.tabl_a2{
+    background: url(../img/fon.png);   
+}
+.tabl_a2, .tabl_a2 th, .tabl_a2 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: right;
+    margin: 0 auto;
+    padding: 7px;
+    
+    
+}
+.tabl_a2 th{
+    text-align: center;
+}
+/* .tabl_a2 tr:nth-child(even) {
+    background: #C9E3FE;
+} */
+
+.fon{
+    background:rgb(233, 231, 231);
 }

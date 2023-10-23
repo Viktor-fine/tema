@@ -1,8 +1,8 @@
 {% extends "../base.html" %}
 
-{% block title %}Форма Б.7{% endblock %}
+{% block title %}Форма А.2{% endblock %}
 
-{% block title_form %}<p><b>Форма Б.7</b> - Ведомость определения потерь в процессе упаковывания</p>{% endblock  %}
+{% block title_form %}<p><b>Форма А.2</b> - Показатели условий проведения испытаний упаковщиков рулонов сенажа</p>{% endblock  %}
 
 {% block tabl_header %}
 <table class="tabl_1">
@@ -26,7 +26,7 @@
 {% endblock %}
 
 {% block tabl %}
-    <table class="tabl_b2">
+    <table class="tabl_a2">
         <thead>
             <tr>
                 <th>Наименование показателя</th>
@@ -55,10 +55,107 @@
                 <td><input type="number" class="i_4" size="15"></td>
             </tr>
             <tr>
-                <td>Характеристика мест упаковки</td>
-                <td><input type="number" class="i_4" size="15"></td>
+                <th colspan="2">Характеристика мест упаковки</th>
             </tr>
-            
+            <tr>
+                <td>Место упаковки рулонов</td>
+                <td><input type="text" class="i_4" size="15"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Размер места упаковки, м:</td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp; -&nbsp;Длина</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp; -&nbsp;Ширина</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Уклон поверхности площадки, &deg;</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Тип почвы и название по механическому составу</td>
+                <td><input type="text" class="i_4" size="15"></td>
+            </tr>
+            <tr>
+                <td>Влажность почвы в слое 0-10 см, %</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Твёрдость почвы в слое 0-10 см, МПа</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Наименование и марка машины, с помощью<br> котророй образованы рулоны</td>
+                <td><input type="text" class="i_4" size="25"></td>
+            </tr>
+            <tr>
+                <td>Культура</td>
+                <td><input type="text" class="i_4" size="15"></td>
+            </tr>
+            <tr>
+                <td>Влажность растений, %</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Характеристика рулонов</th>
+            </tr>
+            <tr>
+                <td colspan="2">линейные размеры, мм</td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp; - &nbsp;Высота (ширина)</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp; - &nbsp;Диаметр</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Объём, м&sup3;</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Масса, кг</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Плотность массы в рулоне, кг/м&sup3;</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Метеорологические условия</th>
+            </tr>
+            <tr>
+                <td>Температура воздуха, &deg;С </td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Относительная влажность воздуха, % </td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Скорость ветра, м/с </td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Характеристика упаковочного материала</th>
+            </tr>
+            <tr>
+                <td>Вид</td>
+                <td><input type="text" class="i_4" size="20"></td>
+            </tr>
+            <tr>
+                <td>Ширина агростретч-плёнки на бобине, мм</td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
+            <tr>
+                <td>Масса бобины, кг </td>
+                <td><input type="number" class="i_4" size="7"></td>
+            </tr>
         </tbody>
     </table>
 {% endblock %}

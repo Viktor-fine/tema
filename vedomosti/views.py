@@ -25,3 +25,6 @@ def b7(request):
 
 def a2(request):
     return render(request, 'form_a_b/a2.html')
+
+def a3(request):
+    return render(request, 'form_a_b/a3.html')
