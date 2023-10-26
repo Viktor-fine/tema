@@ -43,12 +43,12 @@ ul{
     display: flex;
     text-align: left;
     gap: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5px
 }
 a {
     text-decoration: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 ul li:hover{
     background-color: #ffc880;
