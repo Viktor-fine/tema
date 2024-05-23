@@ -1,7 +1,11 @@
 {% extends "../base.html" %}
 
 {% block title %}Форма Б.1{% endblock %}
-{% block title_form %}<p><b>Форма Б.1</b> - Ведомость определения характеристики места упаковки</p>{% endblock  %}
+
+{% block title_form %}
+    <button type="button" class="but_primer1" name="primer">Пример заполнения</button>
+    <p><b>Форма Б.1</b> - Ведомость определения характеристики места упаковки</p>
+{% endblock  %}
 
 {% block tabl_header %}
 <table class="tabl_1">
@@ -72,4 +76,10 @@
         <td class="tabl-td"><input type="number" class="i_5_4" size="7"></td>
     </tr>
 </table>
+<br>
+<div>
+    <button type="button" class="raschet">Расчёт</button>
+    <button type="button" class="bd1">Сохранить в БД</button>
+    <button type="button" class="print1">Печать</button>
+</div>
 {% endblock %}
