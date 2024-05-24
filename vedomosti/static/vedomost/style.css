@@ -153,3 +153,10 @@ thead{
 .fon{
     background:rgb(233, 231, 231);
 }
+/* ----- Кнопки (расчёт, печать, стереть) ----- */
+
+.butt {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
