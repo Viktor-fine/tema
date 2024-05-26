@@ -3,7 +3,8 @@
 {% block title %}Форма Б.1{% endblock %}
 
 {% block title_form %}
-    <button type="button" class="but_primer1" name="primer">Пример заполнения</button>
+    <button type="button" class="primer1_b1" name="primer">Пример заполнения</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
     <p><b>Форма Б.1</b> - Ведомость определения характеристики места упаковки</p>
 {% endblock  %}
 
@@ -42,44 +43,45 @@
     </tr>
     <tr>
         <td class="tabl-td">1</td>
-        <td class="tabl-td"><input type="text" class="i_1_1" size="15"></td>
-        <td class="tabl-td"><input type="number" class="i_1_2" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_1_3" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_1_4" size="7"></td>
+        <td class="tabl-td"><input type="text" class="text_1" size="15"></td>
+        <td class="tabl-td"><input type="number" class="l_1" size="7"></td>
+        <td class="tabl-td"><input type="number" class="h_1" size="7"></td>
+        <td class="tabl-td"><input type="number" class="ukl_1" size="7"></td>
     </tr>
     <tr>
         <td class="tabl-td">2</td>
-        <td class="tabl-td"><input type="text" class="i_2_1" size="15"></td>
-        <td class="tabl-td"><input type="number" class="i_2_2" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_2_3" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_2_4" size="7"></td>
+        <td class="tabl-td"><input type="text" class="text_2" size="15"></td>
+        <td class="tabl-td"><input type="number" class="l_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="h_2" size="7"></td>
+        <td class="tabl-td"><input type="number" class="ukl_2" size="7"></td>
     </tr>
     <tr>
         <td class="tabl-td">3</td>
-        <td class="tabl-td"><input type="text" class="i_3_1" size="15"></td>
-        <td class="tabl-td"><input type="number" class="i_3_2" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_3_3" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_3_4" size="7"></td>
+        <td class="tabl-td"><input type="text" class="text_3" size="15"></td>
+        <td class="tabl-td"><input type="number" class="l_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="h_3" size="7"></td>
+        <td class="tabl-td"><input type="number" class="ukl_3" size="7"></td>
     </tr>
     <tr>
         <td class="tabl-td">Сумма</td>
         <td class="tabl-td" rowspan="2"></td>
-        <td class="tabl-td"><input type="number" class="i_4_2" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_4_3" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_4_4" size="7"></td>
+        <td class="tabl-td"><span class="l_sum"></span></td>
+        <td class="tabl-td"><span class="h_sum"></span></td>
+        <td class="tabl-td"><span class="ukl_sum"></span></td>
     </tr>
     <tr>
         <td class="tabl-td">Среднее<br>арифметическое<br>значение</td>
         <!-- <td class="tabl-td"></td> -->
-        <td class="tabl-td"><input type="number" class="i_5_2" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_5_3" size="7"></td>
-        <td class="tabl-td"><input type="number" class="i_5_4" size="7"></td>
+        <td class="tabl-td"><span class="l_sred"></span></td>
+        <td class="tabl-td"><span class="h_sred"></span></td>
+        <td class="tabl-td"><span class="ukl_sred"></span></td>
     </tr>
 </table>
 <br>
 <div class="butt">
-    <button type="button" class="raschet">Расчёт</button>
-    <button type="button" class="bd1">Сохранить в БД</button>
-    <button type="button" class="print1">Печать</button>
+    <button type="button" class="raschet_b1">Расчёт</button>
+    <button type="button" class="bd_b1">Сохранить в БД</button>
+    <button type="button" class="print1_b1">Печать</button>
 </div>
+<script src="../../static/js/b1.js"></script>
 {% endblock %}
