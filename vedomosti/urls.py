@@ -10,6 +10,7 @@ urlpatterns=[
     path('b5/', b5, name='b5'),
     path('b6/', b6, name='b6'),
     path('b7/', b7, name='b7'),
+    path('b8/', b8, name='b8'),
     path('a2/', a2, name='a2'),
-    path('a3/', a3, name='a3')
+    path('a3/', a3, name='a3'),
 ]

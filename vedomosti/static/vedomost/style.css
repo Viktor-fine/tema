@@ -160,3 +160,12 @@ thead{
     justify-content: center;
     gap: 25px;
 }
+
+.tabl_b8, .tabl_b8 th, .tabl_b8 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tabl_b8{
+    width: 70%;
+    margin: 0 auto;
+}
