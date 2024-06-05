@@ -3,8 +3,10 @@
 {% block title %}Форма Б.8{% endblock %}
 
 {% block title_form %}
-<button type="button" class="primer1_b1" name="primer">Пример заполнения</button>
-<button type="button" class="reset" name="res">Очистить поля</button>
+<div class="butt">
+    <button type="button" class="primer1_b1" name="primer">Пример</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+</div>
 <p><b>Форма Б.1</b> - Ведомость определения ростковости семян сахарной свеклы и количества драже без семян</p>
 {% endblock  %}
 
@@ -32,7 +34,7 @@
     </tr> 
     <tr>
         <td><label for="sredstva" class="mod_traktor">Средства измерений:</label></td>
-        <td><input type="text" id="sredstva" class="i_3_3" name="sredstva" size="35"></td>
+        <td><input type="text" id="sredstva" class="i_3_3" name="sredstva" size="55"></td>
     </tr>            
 </table>
 {% endblock %}
@@ -158,7 +160,7 @@
     <br>
     <div class="butt">
         <button type="button" class="raschet_b1">Расчёт</button>
-        <button type="button" class="bd_b1">Сохранить в БД</button>
+        <button type="button" class="bd_b1">Сохранить</button>
         <button type="button" class="print1_b1">Печать</button>
     </div>
 

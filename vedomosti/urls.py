@@ -13,4 +13,5 @@ urlpatterns=[
     path('b8/', b8, name='b8'),
     path('a2/', a2, name='a2'),
     path('a3/', a3, name='a3'),
+    path('a1/', a1, name='a1'),
 ]
