@@ -189,12 +189,14 @@ thead{
 .form_b{
     display: flex;
     gap: 5px;
+    align-items: center;
     /* border: 1px solid black; */
     
 }
 .form_a{
     display: flex;
     gap: 5px;
+    align-items: center;
     /* border: 1px solid black; */
 }
 
