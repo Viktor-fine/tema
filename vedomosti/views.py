@@ -23,8 +23,6 @@ def b6(request):
 def b7(request):
     return render(request, 'form_a_b/b7.html')
 
-def b8(request):
-    return render(request, 'form_a_b/b8.html')
 
 def a2(request):
     return render(request, 'form_a_b/a2.html')
@@ -32,5 +30,3 @@ def a2(request):
 def a3(request):
     return render(request, 'form_a_b/a3.html')
 
-def a1(request):
-    return render(request, 'form_a_b/a1.html')

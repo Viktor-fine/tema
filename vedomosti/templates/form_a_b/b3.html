@@ -2,7 +2,11 @@
 
 {% block title %}Форма Б.3{% endblock %}
 
-{% block title_form %}<p><b>Форма Б.3</b> - Ведомость определения метеорологических условий</p>{% endblock  %}
+{% block title_form %}
+    <button type="button" class="primer1_b1" name="primer">Пример заполнения</button>
+    <button type="button" class="reset" name="res">Очистить поля</button>
+    <p><b>Форма Б.3</b> - Ведомость определения метеорологических условий</p>
+{% endblock  %}
 
 {% block tabl_header %}
 <table class="tabl_1">
@@ -87,5 +91,12 @@
             </tr>
         </tbody>
     </table>
+    <br>
+    <div class="butt">
+        <button type="button" class="raschet_b1">Расчёт</button>
+        <button type="button" class="bd_b1">Сохранить в БД</button>
+        <button type="button" class="print1_b1">Печать</button>
+    </div>
+<script src="../../static/js/b1.js"></script>
 
 {% endblock %}

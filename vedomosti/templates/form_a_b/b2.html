@@ -1,7 +1,11 @@
 {% extends "../base.html" %}
 
 {% block title %}Форма Б.2{% endblock %}
-{% block title_form %}<p><b>Форма Б.2</b> - Ведомость определения характеристики рулонов</p>{% endblock  %}
+{% block title_form %}
+<button type="button" class="primer1_b1" name="primer">Пример заполнения</button>
+<button type="button" class="reset" name="res">Очистить поля</button>
+<p><b>Форма Б.2</b> - Ведомость определения характеристики рулонов</p>
+{% endblock  %}
 
 {% block tabl_header %}
 <table class="tabl_1">
@@ -135,4 +139,11 @@
             </tr>
         </tbody>
     </table>
+    <br>
+    <div class="butt">
+        <button type="button" class="raschet_b1">Расчёт</button>
+        <button type="button" class="bd_b1">Сохранить в БД</button>
+        <button type="button" class="print1_b1">Печать</button>
+    </div>
+    <script src="../../static/js/b2.js"></script>
 {% endblock %}
